@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2? family = Poppins: ital, wght @ 0,200; 0,300; 0,500; 0,800; 1,400 & display = swap');
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("./fontes/Poppins/Poppins-Bold.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(0, 0, 0, .7)
+}
+
+#container{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background: url("./imagens/david-monje-SdeodksvYwE-unsplash.jpg") no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+    opacity: 1;
+}
+
+
+#logo-tec{
+    position: absolute;
+    margin: 30px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    opacity: .8;  
+}
+
+#text-tec{
+    position: relative;
+    top: 350px;
+    margin-right: 600px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    opacity: .7;
+}
+
+.text p{
+    position: relative;
+    top: 360px;
+    margin-right: 600px;
+    font-family: 'Poppins';
+    opacity: .7;
+}
+
+#menu{
+    position: relative;
+    float: right;
+    bottom: 50px;
+}
+
+.nav-menu{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-right: 150px;
+    gap: 60px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins';
+    transition: all 1s;
+    opacity: .7;
+    padding:10px;
+}
+
+li a:hover{
+    padding: 10px;
+    background-color: rgb(48, 48, 48);
+    text-decoration: underline;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.form{
+    position: absolute;
+    margin-left: 880px;
+    margin-top: 60px;
+    transition: all 1s;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 450px;
+    background-color: transparent;
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    opacity: .6;
+    z-index: 0;
+    transition: all 1s;
+}
+
+form:hover{
+    opacity: 1;
+}
+
+.form-title{
+    font-family: 'Poppins';
+    opacity: .7;
+}
+
+input{
+    position: relative;
+    margin-bottom: 15px;
+    top: 30px;
+    padding: 7px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: all 1s;
+    color: white;
+}
+
+input:hover{
+    border-bottom: 1px solid white;
+}
+
+#btn{
+    position: relative;
+    width: 130px;
+    padding: 7px;
+    top: 70px;
+    left: 95px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FF00FF;
+    color: rgba(0, 0, 0, .6);
+    font-size: 16px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    opacity: .7;
+    transition: all 1s;
+}
+
+#btn:hover{
+    background-color: #a800a8d0;
+    opacity: 1;
+    color: black;
+}
+
+.text-form{
+    position: relative;
+    top: 100px;
+    left: 5px;
+    font-size: 13px;
+    font-family: 'Poppins';
+    opacity: .7;
+}
+
+.text-form::before{
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 1px;
+    color: white;
+    background-color: white;
+    top: 12px;
+    left: 10px;
+}
+
+.text-form::after{
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 1px;
+    color: white;
+    background-color: white;
+    top: 12px;
+    right: 10px;
+}
+
+#forgot{
+    position: relative;
+    top: 200px;
+    left: 10px;
+    opacity: .7;
+    font-size: 11px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: white;
+}
+
+#login{
+    position:relative;
+    bottom: 100px;
+    left: 4px;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 300px;
+    height: 800px;
+    background-color: black;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#login.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+#login h1{
+    color: #FF00FF;
+    font-family: 'Poppins';
+}
+
+.load{
+    width: 200px;
+    height: 200px;
+    border: 30px solid;
+    border-radius: 50%;
+    border-top-color: transparent ;
+    margin: 0 auto;
+    animation: load 5s;
+    color: #FF00FF;
+
+}
+
+@keyframes load{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
