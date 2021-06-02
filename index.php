@@ -1,3 +1,20 @@
+<?php
+    if(isset($_POST['submit'])) {
+        // print_r($_POST['email']);
+        // print_r($_POST['password']);
+
+        include_once('config.php');
+
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $result = mysqli_query($conexao, "INSERT INTO usuarios('email, password') VALUES ($email, $password)");
+
+    }
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,13 +48,13 @@
     </div>
 
     <div class="form">
-        <form>
+        <form action="index.php" method="POST">
             <h1 class="form-title">Welcome</h1>
 
-            <input type="email" id="email" placeholder="E-mail">
-            <input type="password" id="password" placeholder="Password">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <input type="password" name="password" id="password" placeholder="Password">
 
-            <button type="submit" id="btn" onclick="Btn.open()">Sign in</button>
+            <button type="submit" name="submit" id="btn" onclick="Btn.open()">Sign in</button>
             <p class="text-form">
                 or sign with
             </p>
